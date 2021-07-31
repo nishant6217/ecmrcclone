@@ -8,5 +8,8 @@ router.post("/signup", user.userSignup);
 router.post("/login", user.userLogin);
 router.get("/products", product.getProducts);
 router.get("/products/:id", product.getProductById);
+router.get("/ping", (req, res) => {
+    return res.status(200).json({ message: "pong" });
+  });
 
 module.exports = router;
