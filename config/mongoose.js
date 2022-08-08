@@ -1,10 +1,14 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://flpk:flpk6217@cluster0.iuchq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://rishuBackend:rishuBackend@cluster0.9j9zd5p.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: true,
 });
+
+
+
+
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "error connecting mongodb"));
 

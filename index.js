@@ -12,7 +12,7 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-DefaultData();
+// DefaultData();
 app.use("/", require('./routes/routes'));
 app.listen(PORT, (error) => {
   if (error) {
